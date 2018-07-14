@@ -15,6 +15,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginBottom="3dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
@@ -26,6 +27,13 @@
             tools:ignore="NestedWeights">
 
             <TextView
+                android:id="@+id/first_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <TextView
                 android:id="@+id/first_day_of_month"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -33,12 +41,6 @@
                 android:gravity="center"
                 tools:ignore="NestedWeights" />
 
-            <TextView
-                android:id="@+id/first_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,6 +48,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/second_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/second_day_of_month"
@@ -54,12 +63,6 @@
                 android:layout_weight="1"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/second_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,6 +70,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/third_day_of_month"
@@ -75,12 +85,6 @@
                 android:layout_weight="1"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/third_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,6 +92,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fourth_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/fourth_day_of_month"
@@ -96,12 +107,6 @@
                 android:layout_weight="1"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/fourth_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -109,6 +114,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fifth_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/fifth_day_of_month"
@@ -117,12 +129,6 @@
                 android:layout_weight="1"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/fifth_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -130,6 +136,13 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/sixth_day_of_week"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center" />
 
             <TextView
                 android:id="@+id/sixth_day_of_month"
@@ -138,12 +151,6 @@
                 android:layout_weight="1"
                 android:gravity="center" />
 
-            <TextView
-                android:id="@+id/sixth_day_of_week"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center" />
         </LinearLayout>
 
         <LinearLayout
@@ -153,18 +160,19 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/sevens_day_of_month"
+                android:id="@+id/sevens_day_of_week"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center" />
 
             <TextView
-                android:id="@+id/sevens_day_of_week"
+                android:id="@+id/sevens_day_of_month"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center" />
+
         </LinearLayout>
 
     </LinearLayout>
