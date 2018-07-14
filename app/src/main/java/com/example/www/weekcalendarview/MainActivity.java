@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         RecyclerView weekView = findViewById(R.id.week_recycler);
-        weekView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
+        LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        weekView.setLayoutManager(layoutManager);
         weekView.setHasFixedSize(true);
 
         Calendar startDate = Calendar.getInstance();

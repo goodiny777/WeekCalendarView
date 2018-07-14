@@ -31,14 +31,16 @@ public class WeekViewRecycler extends RecyclerView.Adapter<WeekViewRecycler.Data
         days = new ArrayList<>();
         this.startDate = startDate;
         this.startDate.setFirstDayOfWeek(Calendar.SUNDAY);
+        //set start date - the nearest Sunday to date we've got
         while(startDate.get(Calendar.DAY_OF_WEEK)!=Calendar.SUNDAY){
             startDate.add(Calendar.DATE, -1);
         }
-        //set last date
+        //set last date - the nearest Saturday to today
         Calendar lastDate = Calendar.getInstance();
-        lastDate.add(Calendar.DATE, -1);
+        while(lastDate.get(Calendar.DAY_OF_WEEK)!=Calendar.SATURDAY){
+            lastDate.add(Calendar.DATE, 1);
+        }
 
-        Log.e("AMOUNT OF WEEKS BETWEEN", "" + (lastDate.get(Calendar.WEEK_OF_YEAR) - startDate.get(Calendar.WEEK_OF_YEAR)));
         while (startDate.before(lastDate)) {
             Date[] weekDays = new Date[7];
             for (int i = 0; i < weekDays.length; i += 1) {
@@ -108,26 +110,9 @@ public class WeekViewRecycler extends RecyclerView.Adapter<WeekViewRecycler.Data
 
     }
 
-
     @Override
     public int getItemCount() {
         return days.size();
     }
-/*
-    public static int daysBetween(Calendar startInclusive, Calendar endExclusive) {
-        zeroTime(startInclusive);
-        zeroTime(endExclusive);
-
-        long diff = endExclusive.getTimeInMillis() - startInclusive.getTimeInMillis(); //result in millis
-        return (int) TimeUnit.MILLISECONDS.toDays(diff);
-    }
-
-    private static void zeroTime(Calendar calendar) {
-        calendar.set(Calendar.HOUR_OF_DAY, 0);
-        calendar.set(Calendar.MINUTE, 0);
-        calendar.set(Calendar.SECOND, 0);
-        calendar.set(Calendar.MILLISECOND, 0);
-    }*/
-
 }
 
